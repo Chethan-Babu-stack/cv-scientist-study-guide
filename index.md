@@ -11,4 +11,9 @@ Whether you're a student starting your journey, a job seeker preparing for inter
 
 Explore foundational concepts, practical tutorials, and research-backed strategies across deep learning, vision transformers, generative models, and more.
 
+
 👉 [Learn more about me and the motivation behind this guide](/cv-scientist-study-guide/about/)
+
+# Topics
+
+👉 [Version Control](/cv-scientist-study-guide/version-control/version-control/)
