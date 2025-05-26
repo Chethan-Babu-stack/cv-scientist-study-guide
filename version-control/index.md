@@ -1,10 +1,10 @@
-# 📘 Version Control: A Lifeline for Developers and Data Scientists
+# Version Control: A Lifeline for Developers and Data Scientists
 
 In the world of software and data science, change is constant. Whether you're updating code, tuning a model, or cleaning a dataset, version control is the tool that keeps you sane. If you’ve used GitHub or dabbled with DVC, you’ve already tasted the power of version control—but there’s much more under the surface.
 
 ---
 
-## 🚀 What is Version Control?
+## What is Version Control?
 
 **Version control** is a system that helps you manage changes to files over time. Think of it as *track changes* for your code or data projects.
 
@@ -23,7 +23,7 @@ Git (used by GitHub) is by far the most popular today, especially in open-source
 
 ---
 
-## 🛠️ Git and GitHub — Code Version Control
+## Git and GitHub — Code Version Control
 
 **Git** is a distributed version control system. You work locally and sync with a remote copy (e.g., on GitHub). Some core Git concepts:
 
@@ -38,7 +38,7 @@ If you've used GitHub to push your code, you've already used version control. Co
 
 ---
 
-## 📦 What About Data? Enter DVC (Data Version Control)
+## What About Data? Enter DVC (Data Version Control)
 
 Git is great for code, but it chokes on large files and datasets. That’s where **DVC** comes in.
 
