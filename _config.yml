@@ -1,3 +1,5 @@
-title: "Computer Vision Scientist Study Guide"
-baseurl: "/cv-scientist-study-guide"
-url: "https://chethan-babu-stack.github.io"  # Replace with your GitHub username if different
+title: Computer Vision Scientist Study Guide
+description: A curated blog to help you master computer vision
+theme: jekyll-theme-cayman
+url: "https://chethan-babu-stack.github.io"  # Or your GitHub Pages profile domain
+baseurl: "/cv-scientist-study-guide"         # This must match your repository name
