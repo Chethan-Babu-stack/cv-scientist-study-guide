@@ -1,6 +1,6 @@
-# Essential Linux Commands for Interviews (Updated)
+# Essential Linux Commands for Interviews
 
-This guide covers the most important Linux commands commonly asked about in technical interviews—particularly useful for data engineers, ML/AI engineers, and system developers.
+This guide covers the most important Linux commands useful for data engineers, ML/AI engineers, and system developers.
 
 ---
 
@@ -85,6 +85,7 @@ This guide covers the most important Linux commands commonly asked about in tech
 ## 7. 🔁 File Sync & Transfer
 
 ### 🔄 `rsync` — Efficient File Synchronization
+
 | Command | Description |
 |--------|-------------|
 | `rsync -avh <src> <dest>` | Archive mode, verbose, human-readable |
@@ -93,6 +94,7 @@ This guide covers the most important Linux commands commonly asked about in tech
 | `rsync -a --delete <src> <dest>` | Sync and delete files in dest that are not in source |
 
 ### ☁️ `rclone` — Cloud Storage Sync
+
 | Command | Description |
 |--------|-------------|
 | `rclone config` | Setup remote cloud storage |
@@ -122,6 +124,7 @@ This guide covers the most important Linux commands commonly asked about in tech
 ## 9. 📦 Package Management
 
 ### Ubuntu/Debian
+
 | Command | Description |
 |--------|-------------|
 | `sudo apt update` | Update package list |

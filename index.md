@@ -16,4 +16,5 @@ Explore foundational concepts, practical tutorials, and research-backed strategi
 # Topics
 
 👉 [Version Control]({{ site.baseurl }}/version-control/)
+
 👉 [Linux]({{ site.baseurl }}/linux/)
