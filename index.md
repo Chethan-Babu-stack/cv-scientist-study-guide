@@ -11,10 +11,12 @@ Whether you're a student starting your journey, a job seeker preparing for inter
 
 Explore foundational concepts, practical tutorials, and research-backed strategies across deep learning, vision transformers, generative models, and more.
 
-👉 [Learn more about me and the motivation behind this guide]({{ site.baseurl }}/about/)
+[Learn more about me and the motivation behind this guide]({{ site.baseurl }}/about/)
 
 # Topics
 
 👉 [Version Control]({{ site.baseurl }}/version-control/)
 
 👉 [Linux]({{ site.baseurl }}/linux/)
+
+👉 [Leetcode Top 150 Questions with Solutions]({{ site.baseurl }}/leetcode/)
