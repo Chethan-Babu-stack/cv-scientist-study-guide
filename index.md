@@ -20,3 +20,5 @@ Explore foundational concepts, practical tutorials, and research-backed strategi
 👉 [Linux]({{ site.baseurl }}/linux/)
 
 👉 [Leetcode Top 150 Questions with Solutions]({{ site.baseurl }}/leetcode/)
+
+👉 [Quantization]({{ site.baseurl }}/quantization/)
