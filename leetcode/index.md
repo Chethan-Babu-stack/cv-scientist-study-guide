@@ -132,7 +132,7 @@ Example:
 Input: nums = [1,1,1,2,2,3]
 Output: 5, nums = [1,1,2,2,3,_]
 
-**Python Solution 1: Using two pointers**
+**Python Solution: Using two pointers**
 
 ```python
 class Solution:
@@ -157,7 +157,7 @@ Example:
 Input: nums = [3,2,3]
 Output: 3
 
-**Python Solution 1: Using two pointers**
+**Python Solution: Boyer-Moore Voting Algorithm**
 
 ```python
 class Solution:
