@@ -146,7 +146,7 @@ class Solution:
         return k
 ```
 
-## 4. Majority Element
+## 5. Majority Element
 
 **Problem Statement**  
 Given an array nums of size n, return the majority element.
@@ -171,4 +171,33 @@ class Solution:
             count += (1 if num == candidate else -1)
 
         return candidate
+```
+
+## 6. Rotate Array
+
+**Problem Statement**  
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+
+Example:
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+
+**Python Solution: Boyer-Moore Voting Algorithm**
+
+```python
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        k %= len(nums)
+        def reverse(left, right):
+            while left < right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
+
+        reverse(0, len(nums)-1)
+        reverse(0, k-1)
+        reverse(k, len(nums)-1)
 ```

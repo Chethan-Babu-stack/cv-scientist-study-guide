@@ -22,3 +22,5 @@ Explore foundational concepts, practical tutorials, and research-backed strategi
 👉 [Leetcode Top 150 Questions with Solutions]({{ site.baseurl }}/leetcode/)
 
 👉 [Quantization]({{ site.baseurl }}/quantization/)
+
+👉 [Machine Learning]({{ site.baseurl }}/machine-learning/important-terms)
