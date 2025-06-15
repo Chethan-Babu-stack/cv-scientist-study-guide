@@ -253,3 +253,42 @@ class Solution:
                 profit += (prices[i] - prices[i-1])
         return profit
 ```
+
+## 9. Jump Game
+
+**Problem Statement**  
+You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.
+
+Return true if you can reach the last index, or false otherwise.
+
+Example:
+Input: nums = [2,3,1,1,4]
+Output: true
+
+**Python Solution 1**
+
+```python
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        farthest = 0
+        for i in range(len(nums)):
+            if i > farthest:
+                return False
+            farthest = max(farthest, i+nums[i])
+        return True
+```
+
+**Python Solution 2**
+
+```python
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+        gas_in_car = 0
+        for fuel in nums:
+            if gas_in_car < 0:
+                return False
+            elif fuel > gas_in_car:
+                gas_in_car = fuel
+            gas_in_car -= 1
+        return True
+```
