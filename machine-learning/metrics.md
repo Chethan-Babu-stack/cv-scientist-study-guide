@@ -28,6 +28,7 @@ This guide covers key metrics used to evaluate classification models. Each metri
         3. Fraud Detection Alert: Avoid flagging normal transactions as fraud (to reduce customer complaints).
         4. Autonomous Driving Pedestrian Detection: Be certain before applying brakes on detecting a human to avoid unnecessary stops.
         5. Cancer Screening Tool in Mass Populations: If used as a second-step screening (after high recall first-step), we want only truly positive cases flagged.
+
 ---
 
 ## 🔍 Recall (Sensitivity / True Positive Rate)
@@ -47,6 +48,7 @@ This guide covers key metrics used to evaluate classification models. Each metri
         3. Fire Alarm System: Trigger on all potential fire signs—even if it sometimes goes off unnecessarily.
         4. Medical Diagnosis (e.g., Tuberculosis, Cancer): Catch every patient with disease, even if some healthy people get flagged.
         5. Criminal Record Check for High-Risk Roles (e.g., childcare): Better to flag questionable cases than miss a real threat.
+
 ---
 
 ## ⚖️ F1 Score
