@@ -23,4 +23,4 @@ Explore foundational concepts, practical tutorials, and research-backed strategi
 
 👉 [Quantization]({{ site.baseurl }}/quantization/)
 
-👉 [Machine Learning]({{ site.baseurl }}/machine-learning/important-terms)
+👉 [Machine Learning]({{ site.baseurl }}/machine-learning/)
