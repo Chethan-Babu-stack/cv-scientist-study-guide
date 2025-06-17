@@ -292,3 +292,34 @@ class Solution:
             gas_in_car -= 1
         return True
 ```
+
+## 9. Jump Game II
+
+**Problem Statement**  
+You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0].
+
+Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where:
+
+0 <= j <= nums[i] and i + j < n
+
+Return the minimum number of jumps to reach nums[n - 1]. The test cases are generated such that you can reach nums[n - 1].
+
+Example:
+Input: nums = [2,3,1,1,4]
+Output: 2
+
+**Python Solution**
+
+```python
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        curr_pos = 0
+        jumps = 0
+        max_jump_possible = 0
+        for i in range(len(nums)-1):
+            max_jump_possible = max(max_jump_possible, i+nums[i])
+            if i == curr_pos:
+                jumps += 1
+                curr_pos = max_jump_possible
+        return jumps
+```
