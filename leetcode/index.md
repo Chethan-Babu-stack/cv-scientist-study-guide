@@ -347,3 +347,100 @@ class Solution:
                 return max_h_index - i
         return 0
 ```
+
+## 12. Insert Delete GetRandom O(1)
+
+**Problem Statement**  
+Implement the RandomizedSet class:
+
+RandomizedSet() Initializes the RandomizedSet object.
+bool insert(int val) Inserts an item val into the set if not present. Returns true if the item was not present, false otherwise.
+bool remove(int val) Removes an item val from the set if present. Returns true if the item was present, false otherwise.
+int getRandom() Returns a random element from the current set of elements (it's guaranteed that at least one element exists when this method is called). Each element must have the same probability of being returned.
+You must implement the functions of the class such that each function works in average O(1) time complexity.
+
+Example:
+Input
+["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]
+[[], [1], [2], [2], [], [1], [2], []]
+Output
+[null, true, false, true, 2, true, false, 2]
+
+**Python Solution**
+
+```python
+import random
+class RandomizedSet:
+
+    def __init__(self):
+        self.nums = set()
+
+    def insert(self, val: int) -> bool:
+        if val in self.nums:
+            return False
+        else:
+            self.nums.add(val)
+            return True
+
+    def remove(self, val: int) -> bool:
+        if val in self.nums:
+            self.nums.remove(val)
+            return True
+        else:
+            return False
+
+    def getRandom(self) -> int:
+        index = random.randint(0, len(self.nums)-1)
+        return list(self.nums)[index]
+
+
+# Your RandomizedSet object will be instantiated and called as such:
+# obj = RandomizedSet()
+# param_1 = obj.insert(val)
+# param_2 = obj.remove(val)
+# param_3 = obj.getRandom()
+```
+
+## 13. Product of Array Except Self
+
+**Problem Statement**  
+Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+
+The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+
+You must write an algorithm that runs in O(n) time and without using the division operation.
+
+Example 1:
+Input: nums = [1,2,3,4]
+Output: [24,12,8,6]
+
+Example 2:
+Input: nums = [-1,1,0,-3,3]
+Output: [0,0,9,0,0]
+
+**Python Solution**
+
+```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        pre_prod = [0]*len(nums)
+        pre_prod[0] = 1
+        for i in range(1, len(nums)):
+            pre_prod[i] = nums[i-1] * pre_prod[i-1]
+
+        # suf_prod = [0]*len(nums)
+        # suf_prod[len(nums)-1] = 1
+        # for i in range(len(nums)-2, -1, -1):
+        #     suf_prod[i] = nums[i+1] * suf_prod[i+1]
+
+        # res = [0]*len(nums)
+        # for i in range(len(nums)):
+        #     res[i] = pre_prod[i] * suf_prod[i]
+        # return res
+
+        suf_prod_temp = nums[len(nums)-1]
+        for i in range(len(nums)-2, -1, -1):
+            pre_prod[i] = pre_prod[i] * suf_prod_temp
+            suf_prod_temp *= nums[i]
+        return pre_prod
+```
