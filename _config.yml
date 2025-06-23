@@ -3,3 +3,6 @@ description: A curated blog to help you master computer vision
 theme: jekyll-theme-cayman
 url: "https://chethan-babu-stack.github.io"  # Or your GitHub Pages profile domain
 baseurl: "/cv-scientist-study-guide"         # This must match your repository name
+
+kramdown:
+  math_engine: mathjax
