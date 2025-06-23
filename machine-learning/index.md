@@ -5,3 +5,5 @@
 👉 [Important Links]({{ site.baseurl }}/machine-learning/important-links)
 
 👉 [Metrics]({{ site.baseurl }}/machine-learning/metrics)
+
+👉 [Activation Functions]({{ site.baseurl }}/machine-learning/activation-functions)
